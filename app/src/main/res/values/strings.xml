@@ -9,4 +9,8 @@
 
     <string name="empty_ribots">There aren\'t any ribots</string>
     <string name="error_loading_ribots">There was a problem loading the ribots</string>
+
+    <!--facebook credentials-->
+    <string name="facebook_app_id">134347267186814</string>
+    <string name="fb_login_protocol_scheme">fb134347267186814</string>
 </resources>

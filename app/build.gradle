@@ -9,7 +9,7 @@ android {
     buildToolsVersion '25.0.3'
 
     defaultConfig {
-        applicationId 'uk.co.ribot.androidboilerplate'
+        applicationId 'ph.com.thityonedigital.androidboilerplate'
         minSdkVersion 16
         targetSdkVersion 25
         testInstrumentationRunner "${applicationId}.runner.RxAndroidJUnitRunner"
@@ -118,6 +118,9 @@ dependencies {
     compile 'com.jakewharton.timber:timber:4.1.2'
     compile "com.jakewharton:butterknife:$BUTTERKNIFE_VERSION"
     annotationProcessor "com.jakewharton:butterknife-compiler:$BUTTERKNIFE_VERSION"
+
+    //facebook depency
+    compile 'com.facebook.android:facebook-android-sdk:[4,5)'
 
     // Replace provided dependency below with official AutoValue once this issue is fixed
     // https://github.com/google/auto/issues/268
