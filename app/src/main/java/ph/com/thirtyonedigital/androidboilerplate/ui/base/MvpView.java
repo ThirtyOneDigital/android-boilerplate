@@ -8,4 +8,6 @@ package ph.com.thirtyonedigital.androidboilerplate.ui.base;
  */
 public interface MvpView {
 
+    void showError();
+
 }

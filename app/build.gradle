@@ -119,7 +119,7 @@ dependencies {
     compile "com.jakewharton:butterknife:$BUTTERKNIFE_VERSION"
     annotationProcessor "com.jakewharton:butterknife-compiler:$BUTTERKNIFE_VERSION"
 
-    //facebook depency
+    //facebook dependency
     compile 'com.facebook.android:facebook-android-sdk:[4,5)'
 
     // Replace provided dependency below with official AutoValue once this issue is fixed

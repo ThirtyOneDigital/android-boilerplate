@@ -18,6 +18,7 @@ import ph.com.thirtyonedigital.androidboilerplate.R;
 import ph.com.thirtyonedigital.androidboilerplate.data.SyncService;
 import ph.com.thirtyonedigital.androidboilerplate.data.model.Ribot;
 import ph.com.thirtyonedigital.androidboilerplate.ui.base.BaseActivity;
+import ph.com.thirtyonedigital.androidboilerplate.util.DebugUtil;
 import ph.com.thirtyonedigital.androidboilerplate.util.DialogFactory;
 
 public class MainActivity extends BaseActivity implements MainMvpView {
@@ -53,6 +54,7 @@ public class MainActivity extends BaseActivity implements MainMvpView {
         mMainPresenter.attachView(this);
         mMainPresenter.loadRibots();
 
+        DebugUtil.generateFbHash(this);
         if (getIntent().getBooleanExtra(EXTRA_TRIGGER_SYNC_FLAG, true)) {
             startService(SyncService.getStartIntent(this));
         }

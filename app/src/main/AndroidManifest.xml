@@ -21,6 +21,7 @@
             </intent-filter>
         </activity>
 
+        <!--Facebook manifest configuration -->
         <activity android:name="com.facebook.FacebookActivity"
             android:configChanges=
                 "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
@@ -37,10 +38,11 @@
             </intent-filter>
         </activity>
 
-        <service android:name=".data.SyncService"/>
-
         <meta-data android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id"/>
+        <!--End facebook manifest configuration-->
+
+        <service android:name=".data.SyncService"/>
 
         <receiver
             android:name="data.SyncService$SyncOnConnectionAvailable"
